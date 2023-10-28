@@ -24,14 +24,14 @@ Git репозиторий с тестовым приложением и Dockerf
 [Dockerfile](app/Dockerfile)
 
 ```
-docker build -t asukhadola/nginx-test-app .
-docker run --rm -it --name nginx-test-app -p 8080:80 nginx-app
+docker build -t asukhadola/test .
+docker run --rm -it --name nginx-test -p 8080:80 asukhadola/test
 ```
 ![img_1.png](pics/img_1.png)
 ![img.png](pics/img.png)
 ```
 docker login -u "asukhadola"
-docker  push asukhadola/nginx-test-app
+docker  push asukhadola/test
 ```
 
 ![img_2.png](pics/img_2.png)
