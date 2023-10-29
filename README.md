@@ -25,19 +25,21 @@ Git репозиторий с тестовым приложением и Dockerf
 
 ```
 docker build -t asukhadola/test .
-docker run --rm -it --name nginx-test -p 8080:80 asukhadola/test
+docker run --rm -it --name nginx-test -p 8087:80 asukhadola/test
 ```
-![img_1.png](pics/img_1.png)
+
 ![img.png](pics/img.png)
+![img.png](pics/img2.png)
+
 ```
 docker login -u "asukhadola"
 docker  push asukhadola/test
 ```
 
-![img_2.png](pics/img_2.png)
+![img_1.png](pics/img_1.png)
 
 Link:
 
-[https://hub.docker.com/repository/docker/asukhadola/nginx-test-app/general](https://hub.docker.com/repository/docker/asukhadola/nginx-test-app/general)
+[https://hub.docker.com/repository/docker/asukhadola/test/general](https://hub.docker.com/repository/docker/asukhadola/test/general)
 
 
